@@ -1,0 +1,4 @@
+PyQtMeter
+=========
+
+Meter in PyQt
