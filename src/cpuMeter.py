@@ -11,7 +11,10 @@ try:
     def currentCPU(time):
         return psutil.cpu_percent(time)
 except ImportError:
-    print "no moudle named psutil"
+    def currentCPU(time):
+        print "no moudle named psutil"
+        return 0
+        
 class CPUMeter(Meter):
     def __init__(self,parent=None):
         super(CPUMeter,self).__init__()
